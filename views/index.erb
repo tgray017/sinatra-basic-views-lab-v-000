@@ -5,8 +5,10 @@
   </head>
   <body>
     <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
-    <h1>Buster's Best Bowling Alley</h1>
-    <h2>Bet You Can't Bowl A Strike Every Time</h2>
-    <p>97 Bowling Alley Lane, Boulder CO </p>
+    <ul>
+  <% wall_posts.each do |post| %>
+    <li><%= post %></li>
+  <% end %>
+</ul>
   </body>
 </html>
